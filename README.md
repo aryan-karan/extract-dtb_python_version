@@ -19,13 +19,13 @@ If you want to learn more about DTB you can have a look at the
 `extract-dtb` is available on PyPI!
 
 ```
-$ pip install extract-dtb
+pip install extract-dtb
 ```
 
 The `extract-dtb` command is now available:
 
 ```
-$ extract-dtb --help
+extract-dtb --help
 usage: extract-dtb.py [-h] [-o OUTPUT_DIR] [-n] [-V] filename
 
 Extract dtbs from kernel images.
@@ -43,10 +43,10 @@ optional arguments:
 Example:
 
 ```
-$ ./extract-dtb.py -n /tmp/postmarketOS-export/vmlinuz-motorola-titan
+./extract-dtb.py -n /tmp/postmarketOS-export/vmlinuz-motorola-titan
 Found 9 appended dtbs
 
-$ ./extract-dtb.py /tmp/postmarketOS-export/vmlinuz-motorola-titan -o /tmp/dtb
+./extract-dtb.py /tmp/postmarketOS-export/vmlinuz-motorola-titan -o /tmp/dtb
 Dumped kernel, start=0 end=7534024
 Dumped dtbdump_01_Motorola_QC-MSM8226_Titan.dtb, start=7534024 end=7728853
 Dumped dtbdump_02_Motorola_QC-MSM8226_Titan.dtb, start=7728853 end=7923682
@@ -59,7 +59,7 @@ Dumped dtbdump_08_Motorola_QC-MSM8226_Thea.dtb, start=8894086 end=9087470
 Dumped dtbdump_09_Motorola_QC-MSM8226_Thea.dtb, start=9087470 end=9280854
 Extracted 9 appended dtbs + kernel to /tmp/dtb
 
-$ ls -l /tmp/dtb/
+ls -l /tmp/dtb/
 total 9088
 -rw-rw-r-- 1 pablo pablo  194829 Aug 21 01:48 dtbdump_01_Motorola_QC-MSM8226_Titan.dtb
 -rw-rw-r-- 1 pablo pablo  194829 Aug 21 01:48 dtbdump_02_Motorola_QC-MSM8226_Titan.dtb
